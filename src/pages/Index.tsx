@@ -8,6 +8,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useState } from "react";
+import doctorPhoto from "@/assets/doctor-photo.png";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const AnimatedSection = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
