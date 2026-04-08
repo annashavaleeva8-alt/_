@@ -62,11 +62,11 @@ const Header = () => {
       {/* Mobile menu */}
       {menuOpen && (
         <nav className="md:hidden bg-background border-b border-border px-4 pb-4 flex flex-col gap-3 text-sm">
-          <a href="#about" onClick={() => setMenuOpen(false)} className="text-muted-foreground hover:text-foreground py-1">Обо мне</a>
-          <a href="#approach" onClick={() => setMenuOpen(false)} className="text-muted-foreground hover:text-foreground py-1">Мой подход</a>
-          <a href="#services" onClick={() => setMenuOpen(false)} className="text-muted-foreground hover:text-foreground py-1">Услуги</a>
-          <a href="#faq" onClick={() => setMenuOpen(false)} className="text-muted-foreground hover:text-foreground py-1">Вопросы</a>
-          <a href="#contacts" onClick={() => setMenuOpen(false)} className="text-muted-foreground hover:text-foreground py-1">Контакты</a>
+          <a href="#about" onClick={() => setMenuOpen(false)} className="font-bold underline text-muted-foreground hover:text-foreground py-1">Обо мне</a>
+          <a href="#approach" onClick={() => setMenuOpen(false)} className="font-bold underline text-muted-foreground hover:text-foreground py-1">Мой подход</a>
+          <a href="#services" onClick={() => setMenuOpen(false)} className="font-bold underline text-muted-foreground hover:text-foreground py-1">Услуги</a>
+          <a href="#faq" onClick={() => setMenuOpen(false)} className="font-bold underline text-muted-foreground hover:text-foreground py-1">Вопросы</a>
+          <a href="#contacts" onClick={() => setMenuOpen(false)} className="font-bold underline text-muted-foreground hover:text-foreground py-1">Контакты</a>
           <Button asChild size="sm" className="w-fit">
             <a href="#contacts" onClick={() => setMenuOpen(false)}>Записаться на приём</a>
           </Button>
