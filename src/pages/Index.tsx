@@ -97,12 +97,7 @@ const HeroSection = () => (
         </div>
       </div>
       <div className="flex-shrink-0">
-        <div className="w-64 h-72 md:w-80 md:h-96 rounded-2xl bg-secondary flex items-center justify-center">
-          <div className="text-center text-muted-foreground">
-            <Eye className="w-16 h-16 mx-auto mb-3 text-primary opacity-40" />
-            <p className="text-sm">Фото врача</p>
-          </div>
-        </div>
+        <img src={doctorPhoto} alt="Врач-офтальмолог Шавалеева Алина Рустемовна" className="w-64 h-72 md:w-80 md:h-96 rounded-2xl object-cover object-top shadow-lg" />
       </div>
     </div>
   </section>
