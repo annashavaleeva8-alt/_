@@ -343,6 +343,7 @@ const Index = () => {
         <ApproachSection />
         <ManifestoSection />
         <ServicesSection />
+        <ReviewsSection />
         <FAQSection />
         <ContactsSection />
       </main>
