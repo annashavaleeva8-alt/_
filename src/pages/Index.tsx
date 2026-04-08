@@ -85,7 +85,7 @@ const HeroSection = () => (
           Офтальмолог для всей семьи — <span className="text-primary">с первых дней жизни</span>
         </h1>
         <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-8 max-w-xl">
-          Забочусь о зрении детей и взрослых в Москве. Доказательная медицина, бережный подход и внимание к каждому пациенту — от&nbsp;новорождённых до&nbsp;взрослых.
+          Помогаю видеть мир чётко — с&nbsp;первых дней жизни и&nbsp;на&nbsp;долгие годы. Бережная диагностика, доказательный подход и&nbsp;искренняя забота о&nbsp;каждом пациенте.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
           <Button asChild size="lg">
