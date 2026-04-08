@@ -110,9 +110,16 @@ const AboutSection = () => (
           <p className="text-muted-foreground leading-relaxed mb-4">
             Меня зовут <strong className="text-foreground">Шавалеева Алина Рустемовна</strong>. Я — врач-офтальмолог, принимаю пациентов всех возрастов, включая новорождённых. Работаю в Москве и специализируюсь на детской и взрослой офтальмологии.
           </p>
-          <p className="text-muted-foreground leading-relaxed mb-6">
+          <p className="text-muted-foreground leading-relaxed mb-4">
             Для меня важно не просто поставить диагноз, а объяснить каждому пациенту и родителю, что происходит, почему и какие шаги предпринять. Я придерживаюсь принципов доказательной медицины и постоянно повышаю квалификацию.
           </p>
+          <div className="mb-6">
+            <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-2">Образование</h3>
+            <ul className="text-muted-foreground text-sm leading-relaxed space-y-1">
+              <li>🎓 РНИМУ им. Н.И. Пирогова — Лечебное дело (2020)</li>
+              <li>🎓 РНИМУ им. Н.И. Пирогова — Офтальмология (2022)</li>
+            </ul>
+          </div>
           <div className="flex flex-wrap gap-3 justify-center md:justify-start">
             <span className="bg-accent text-accent-foreground text-sm px-4 py-2 rounded-full">Пациенты с 0 лет</span>
             <span className="bg-accent text-accent-foreground text-sm px-4 py-2 rounded-full">Доказательная медицина</span>
