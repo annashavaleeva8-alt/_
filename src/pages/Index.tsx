@@ -248,6 +248,67 @@ const faqItems = [
   },
 ];
 
+const reviews = [
+  {
+    name: "Екатерина М.",
+    child: "мама Миши, 3 года",
+    text: "Алина Рустемовна — чудесный доктор! Сын боялся врачей, но здесь всё прошло спокойно и даже весело. Нашли начальную стадию астигматизма, сейчас корректируем. Очень благодарна за внимательность!",
+    rating: 5,
+  },
+  {
+    name: "Ольга Д.",
+    child: "пациент, 34 года",
+    text: "Впервые врач объяснил мне всё настолько понятно. Почему падает зрение, что делать, какие варианты лечения. Без запугивания, без лишних назначений. Рекомендую от всего сердца.",
+    rating: 5,
+  },
+  {
+    name: "Анна К.",
+    child: "мама Софии, 8 месяцев",
+    text: "Были на первом осмотре у Алины Рустемовны. Дочка даже не заплакала! Доктор всё рассказала, показала результаты, объяснила нормы для нашего возраста. Теперь только к ней.",
+    rating: 5,
+  },
+  {
+    name: "Марина В.",
+    child: "мама Артёма, 7 лет",
+    text: "У сына начала падать близорукость. Алина Рустемовна подобрала программу контроля миопии, за полгода прогрессирование почти остановилось. Профессионал и очень душевный человек.",
+    rating: 5,
+  },
+];
+
+const ReviewsSection = () => (
+  <section id="reviews" className="py-16 md:py-24 px-4">
+    <div className="max-w-6xl mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">Отзывы пациентов</h2>
+        <p className="text-muted-foreground max-w-2xl mx-auto">
+          Доверие — главное в отношениях между врачом и&nbsp;пациентом. Вот что говорят те, кто уже побывал на приёме.
+        </p>
+      </div>
+      <div className="grid sm:grid-cols-2 gap-5">
+        {reviews.map((r, i) => (
+          <Card key={i} className="border-border/60 shadow-sm">
+            <CardContent className="p-6">
+              <div className="flex gap-1 mb-3">
+                {Array.from({ length: r.rating }).map((_, j) => (
+                  <Star key={j} className="w-4 h-4 fill-primary text-primary" />
+                ))}
+              </div>
+              <div className="relative mb-4">
+                <Quote className="absolute -top-1 -left-1 w-6 h-6 text-primary/20" />
+                <p className="text-sm text-muted-foreground leading-relaxed pl-5">{r.text}</p>
+              </div>
+              <div>
+                <p className="font-semibold text-foreground text-sm">{r.name}</p>
+                <p className="text-xs text-muted-foreground">{r.child}</p>
+              </div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
 const FAQSection = () => (
   <section id="faq" className="py-16 md:py-24 px-4">
     <div className="max-w-3xl mx-auto">
