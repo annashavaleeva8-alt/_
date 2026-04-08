@@ -420,14 +420,14 @@ const Index = () => {
     <div className="min-h-screen">
       <Header />
       <main>
-        <HeroSection />
-        <AboutSection />
-        <ApproachSection />
-        <ManifestoSection />
-        <ServicesSection />
-        <ReviewsSection />
-        <FAQSection />
-        <ContactsSection />
+        <AnimatedSection><HeroSection /></AnimatedSection>
+        <AnimatedSection delay={100}><AboutSection /></AnimatedSection>
+        <AnimatedSection delay={100}><ApproachSection /></AnimatedSection>
+        <AnimatedSection><ManifestoSection /></AnimatedSection>
+        <AnimatedSection delay={100}><ServicesSection /></AnimatedSection>
+        <AnimatedSection delay={100}><ReviewsSection /></AnimatedSection>
+        <AnimatedSection><FAQSection /></AnimatedSection>
+        <AnimatedSection delay={100}><ContactsSection /></AnimatedSection>
       </main>
       <Footer />
     </div>
