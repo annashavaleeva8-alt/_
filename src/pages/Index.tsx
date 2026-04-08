@@ -108,12 +108,7 @@ const AboutSection = () => (
     <div className="max-w-6xl mx-auto">
       <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
         <div className="flex-shrink-0">
-          <div className="w-56 h-56 md:w-72 md:h-72 rounded-full bg-secondary flex items-center justify-center">
-            <div className="text-center text-muted-foreground">
-              <Eye className="w-12 h-12 mx-auto mb-2 text-primary opacity-40" />
-              <p className="text-xs">Фото</p>
-            </div>
-          </div>
+          <img src={doctorPhoto} alt="Шавалеева Алина Рустемовна" className="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover object-top shadow-lg" />
         </div>
         <div className="flex-1 text-center md:text-left">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-5">Обо мне</h2>
