@@ -126,6 +126,7 @@ const AboutSection = () => (
             </ul>
           </div>
           <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+            <span className="bg-accent text-accent-foreground text-sm px-4 py-2 rounded-full">Стаж более 5 лет</span>
             <span className="bg-accent text-accent-foreground text-sm px-4 py-2 rounded-full">Пациенты с 0 лет</span>
             <span className="bg-accent text-accent-foreground text-sm px-4 py-2 rounded-full">Доказательная медицина</span>
             <span className="bg-accent text-accent-foreground text-sm px-4 py-2 rounded-full">Москва</span>
