@@ -8,6 +8,20 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useState } from "react";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+
+const AnimatedSection = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
+  const { ref, isVisible } = useScrollReveal(0.1);
+  return (
+    <div
+      ref={ref}
+      className={`transition-none ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
+      style={{ animationDelay: isVisible ? `${delay}ms` : undefined }}
+    >
+      {children}
+    </div>
+  );
+};
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -406,14 +420,14 @@ const Index = () => {
     <div className="min-h-screen">
       <Header />
       <main>
-        <HeroSection />
-        <AboutSection />
-        <ApproachSection />
-        <ManifestoSection />
-        <ServicesSection />
-        <ReviewsSection />
-        <FAQSection />
-        <ContactsSection />
+        <AnimatedSection><HeroSection /></AnimatedSection>
+        <AnimatedSection delay={100}><AboutSection /></AnimatedSection>
+        <AnimatedSection delay={100}><ApproachSection /></AnimatedSection>
+        <AnimatedSection><ManifestoSection /></AnimatedSection>
+        <AnimatedSection delay={100}><ServicesSection /></AnimatedSection>
+        <AnimatedSection delay={100}><ReviewsSection /></AnimatedSection>
+        <AnimatedSection><FAQSection /></AnimatedSection>
+        <AnimatedSection delay={100}><ContactsSection /></AnimatedSection>
       </main>
       <Footer />
     </div>
