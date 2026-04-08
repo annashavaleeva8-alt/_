@@ -8,6 +8,20 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useState } from "react";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+
+const AnimatedSection = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
+  const { ref, isVisible } = useScrollReveal(0.1);
+  return (
+    <div
+      ref={ref}
+      className={`transition-none ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
+      style={{ animationDelay: isVisible ? `${delay}ms` : undefined }}
+    >
+      {children}
+    </div>
+  );
+};
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
