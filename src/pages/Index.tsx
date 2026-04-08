@@ -179,7 +179,7 @@ const ApproachSection = () => (
       </div>
       <div className="grid sm:grid-cols-2 gap-5">
         {approachItems.map((item) => (
-          <Card key={item.title} className="border-border/60 shadow-sm hover:shadow-md transition-shadow">
+          <Card key={item.title} className="border-border/60 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-default">
             <CardContent className="p-6 flex gap-4">
               <div className="w-12 h-12 rounded-xl bg-accent flex items-center justify-center flex-shrink-0">
                 <item.icon className="w-6 h-6 text-primary" />
@@ -231,7 +231,7 @@ const ServicesSection = () => (
       </div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {services.map((s) => (
-          <Card key={s.title} className="border-border/60 shadow-sm text-center hover:shadow-md transition-shadow">
+          <Card key={s.title} className="border-border/60 shadow-sm text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-default">
             <CardContent className="p-6">
               <div className="w-14 h-14 rounded-2xl bg-accent flex items-center justify-center mx-auto mb-4">
                 <s.icon className="w-7 h-7 text-primary" />
