@@ -8,6 +8,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useState } from "react";
+import doctorPhoto from "@/assets/doctor-photo.png";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const AnimatedSection = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
@@ -96,12 +97,7 @@ const HeroSection = () => (
         </div>
       </div>
       <div className="flex-shrink-0">
-        <div className="w-64 h-72 md:w-80 md:h-96 rounded-2xl bg-secondary flex items-center justify-center">
-          <div className="text-center text-muted-foreground">
-            <Eye className="w-16 h-16 mx-auto mb-3 text-primary opacity-40" />
-            <p className="text-sm">Фото врача</p>
-          </div>
-        </div>
+        <img src={doctorPhoto} alt="Врач-офтальмолог Шавалеева Алина Рустемовна" className="w-64 h-72 md:w-80 md:h-96 rounded-2xl object-cover object-top shadow-lg" />
       </div>
     </div>
   </section>
@@ -112,12 +108,7 @@ const AboutSection = () => (
     <div className="max-w-6xl mx-auto">
       <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
         <div className="flex-shrink-0">
-          <div className="w-56 h-56 md:w-72 md:h-72 rounded-full bg-secondary flex items-center justify-center">
-            <div className="text-center text-muted-foreground">
-              <Eye className="w-12 h-12 mx-auto mb-2 text-primary opacity-40" />
-              <p className="text-xs">Фото</p>
-            </div>
-          </div>
+          <img src={doctorPhoto} alt="Шавалеева Алина Рустемовна" className="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover object-top shadow-lg" />
         </div>
         <div className="flex-1 text-center md:text-left">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-5">Обо мне</h2>
