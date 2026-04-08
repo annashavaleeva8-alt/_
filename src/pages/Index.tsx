@@ -36,11 +36,11 @@ const Header = () => {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">
-          <a href="#about" className="hover:text-foreground transition-colors">Обо мне</a>
-          <a href="#approach" className="hover:text-foreground transition-colors">Мой подход</a>
-          <a href="#services" className="hover:text-foreground transition-colors">Услуги</a>
-          <a href="#faq" className="hover:text-foreground transition-colors">Вопросы</a>
-          <a href="#contacts" className="hover:text-foreground transition-colors">Контакты</a>
+          <a href="#about" className="font-bold underline hover:text-foreground transition-colors">Обо мне</a>
+          <a href="#approach" className="font-bold underline hover:text-foreground transition-colors">Мой подход</a>
+          <a href="#services" className="font-bold underline hover:text-foreground transition-colors">Услуги</a>
+          <a href="#faq" className="font-bold underline hover:text-foreground transition-colors">Вопросы</a>
+          <a href="#contacts" className="font-bold underline hover:text-foreground transition-colors">Контакты</a>
         </nav>
 
         <Button asChild className="hidden md:inline-flex" size="sm">
@@ -62,11 +62,11 @@ const Header = () => {
       {/* Mobile menu */}
       {menuOpen && (
         <nav className="md:hidden bg-background border-b border-border px-4 pb-4 flex flex-col gap-3 text-sm">
-          <a href="#about" onClick={() => setMenuOpen(false)} className="text-muted-foreground hover:text-foreground py-1">Обо мне</a>
-          <a href="#approach" onClick={() => setMenuOpen(false)} className="text-muted-foreground hover:text-foreground py-1">Мой подход</a>
-          <a href="#services" onClick={() => setMenuOpen(false)} className="text-muted-foreground hover:text-foreground py-1">Услуги</a>
-          <a href="#faq" onClick={() => setMenuOpen(false)} className="text-muted-foreground hover:text-foreground py-1">Вопросы</a>
-          <a href="#contacts" onClick={() => setMenuOpen(false)} className="text-muted-foreground hover:text-foreground py-1">Контакты</a>
+          <a href="#about" onClick={() => setMenuOpen(false)} className="font-bold underline text-muted-foreground hover:text-foreground py-1">Обо мне</a>
+          <a href="#approach" onClick={() => setMenuOpen(false)} className="font-bold underline text-muted-foreground hover:text-foreground py-1">Мой подход</a>
+          <a href="#services" onClick={() => setMenuOpen(false)} className="font-bold underline text-muted-foreground hover:text-foreground py-1">Услуги</a>
+          <a href="#faq" onClick={() => setMenuOpen(false)} className="font-bold underline text-muted-foreground hover:text-foreground py-1">Вопросы</a>
+          <a href="#contacts" onClick={() => setMenuOpen(false)} className="font-bold underline text-muted-foreground hover:text-foreground py-1">Контакты</a>
           <Button asChild size="sm" className="w-fit">
             <a href="#contacts" onClick={() => setMenuOpen(false)}>Записаться на приём</a>
           </Button>
