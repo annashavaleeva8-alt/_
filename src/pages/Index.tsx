@@ -1,4 +1,4 @@
-import { Eye, Heart, MessageCircle, Baby, Search, Glasses, TrendingDown, ShieldCheck, Phone, MapPin, Send, MessageSquare } from "lucide-react";
+import { Eye, Heart, MessageCircle, Baby, Search, Glasses, TrendingDown, ShieldCheck, Phone, MapPin, Send, MessageSquare, Star, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
