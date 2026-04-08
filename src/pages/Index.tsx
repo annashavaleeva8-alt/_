@@ -36,11 +36,11 @@ const Header = () => {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">
-          <a href="#about" className="hover:text-foreground transition-colors">Обо мне</a>
-          <a href="#approach" className="hover:text-foreground transition-colors">Мой подход</a>
-          <a href="#services" className="hover:text-foreground transition-colors">Услуги</a>
-          <a href="#faq" className="hover:text-foreground transition-colors">Вопросы</a>
-          <a href="#contacts" className="hover:text-foreground transition-colors">Контакты</a>
+          <a href="#about" className="font-bold underline hover:text-foreground transition-colors">Обо мне</a>
+          <a href="#approach" className="font-bold underline hover:text-foreground transition-colors">Мой подход</a>
+          <a href="#services" className="font-bold underline hover:text-foreground transition-colors">Услуги</a>
+          <a href="#faq" className="font-bold underline hover:text-foreground transition-colors">Вопросы</a>
+          <a href="#contacts" className="font-bold underline hover:text-foreground transition-colors">Контакты</a>
         </nav>
 
         <Button asChild className="hidden md:inline-flex" size="sm">
