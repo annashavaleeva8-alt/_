@@ -7,9 +7,10 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import doctorPhoto from "@/assets/doctor-photo.png";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import { supabase } from "@/integrations/supabase/client";
 
 const AnimatedSection = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
   const { ref, isVisible } = useScrollReveal(0.1);
@@ -408,6 +409,23 @@ const Footer = () => (
 );
 
 const Index = () => {
+  // Track visit on mount
+  useEffect(() => {
+    const trackVisit = async () => {
+      try {
+        await supabase.functions.invoke("track-visit", {
+          body: {
+            page: window.location.pathname,
+            referrer: document.referrer || null,
+          },
+        });
+      } catch {
+        // Silently fail
+      }
+    };
+    trackVisit();
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Header />
