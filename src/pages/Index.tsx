@@ -382,14 +382,26 @@ const ContactsSection = () => (
               <Phone className="w-6 h-6 text-primary" />
             </div>
             <h3 className="font-semibold text-foreground mb-1">Телефон</h3>
-            <p className="text-sm text-muted-foreground">Позвоните для записи на приём</p>
+            <a href="tel:+74951625876" className="text-sm text-primary hover:underline font-medium">
+              +7 (495) 162-58-76
+            </a>
           </CardContent>
         </Card>
       </div>
       <div className="mt-8 text-center space-y-4">
-        <div className="flex items-center justify-center gap-2 text-muted-foreground">
-          <MapPin className="w-4 h-4" />
-          <span className="text-sm">Москва · Адрес уточняйте при записи</span>
+        <div className="space-y-2">
+          <div className="flex items-center justify-center gap-2 text-muted-foreground">
+            <MapPin className="w-4 h-4 shrink-0" />
+            <span className="text-sm">Москва, Алхимовская ул., д.1, корп. 1</span>
+          </div>
+          <div className="flex items-center justify-center gap-2 text-muted-foreground">
+            <MapPin className="w-4 h-4 shrink-0" />
+            <span className="text-sm">Подольск, пр-т Ленина, 150/54</span>
+          </div>
+          <div className="flex items-center justify-center gap-2 text-muted-foreground">
+            <MapPin className="w-4 h-4 shrink-0" />
+            <span className="text-sm">Троицк, Академическая площадь, 1</span>
+          </div>
         </div>
         <Button asChild size="lg" variant="outline">
           <a href="https://yandex.ru/maps" target="_blank" rel="noopener noreferrer" className="gap-2">
