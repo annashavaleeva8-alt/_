@@ -390,25 +390,19 @@ const ContactsSection = () => (
       </div>
       <div className="mt-8 text-center space-y-4">
         <div className="space-y-2">
-          <div className="flex items-center justify-center gap-2 text-muted-foreground">
+          <a href="https://yandex.ru/maps/-/CHe8nVgv" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 text-muted-foreground hover:text-primary transition-colors">
             <MapPin className="w-4 h-4 shrink-0" />
             <span className="text-sm">Москва, Алхимовская ул., д.1, корп. 1</span>
-          </div>
-          <div className="flex items-center justify-center gap-2 text-muted-foreground">
+          </a>
+          <a href="https://yandex.ru/maps/-/CHe8nXQJ" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 text-muted-foreground hover:text-primary transition-colors">
             <MapPin className="w-4 h-4 shrink-0" />
             <span className="text-sm">Подольск, пр-т Ленина, 150/54</span>
-          </div>
-          <div className="flex items-center justify-center gap-2 text-muted-foreground">
+          </a>
+          <a href="https://yandex.ru/maps/-/CHe8nRkD" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 text-muted-foreground hover:text-primary transition-colors">
             <MapPin className="w-4 h-4 shrink-0" />
             <span className="text-sm">Троицк, Академическая площадь, 1</span>
-          </div>
-        </div>
-        <Button asChild size="lg" variant="outline">
-          <a href="https://yandex.ru/maps" target="_blank" rel="noopener noreferrer" className="gap-2">
-            <MapPin className="w-5 h-5" />
-            Где меня найти
           </a>
-        </Button>
+        </div>
       </div>
     </div>
   </section>
