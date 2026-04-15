@@ -386,11 +386,17 @@ const ContactsSection = () => (
           </CardContent>
         </Card>
       </div>
-      <div className="mt-8 text-center">
+      <div className="mt-8 text-center space-y-4">
         <div className="flex items-center justify-center gap-2 text-muted-foreground">
           <MapPin className="w-4 h-4" />
           <span className="text-sm">Москва · Адрес уточняйте при записи</span>
         </div>
+        <Button asChild size="lg" variant="outline">
+          <a href="https://yandex.ru/maps" target="_blank" rel="noopener noreferrer" className="gap-2">
+            <MapPin className="w-5 h-5" />
+            Где меня найти
+          </a>
+        </Button>
       </div>
     </div>
   </section>
