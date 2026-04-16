@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/accordion";
 import { useState, useEffect } from "react";
 import doctorPhoto from "@/assets/doctor-photo.png";
+import logoAlina from "@/assets/logo-alina.png";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -31,7 +32,8 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="#" className="text-lg font-semibold text-foreground tracking-tight">
+        <a href="#" className="flex items-center gap-2 text-lg font-semibold text-foreground tracking-tight">
+          <img src={logoAlina} alt="Логотип Алины Шавалеевой" className="h-9 w-9 object-contain" />
           Алина Шавалеева
         </a>
 
