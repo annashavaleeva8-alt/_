@@ -221,6 +221,7 @@ const services = [
   { icon: Glasses, title: "Подбор очков и линз", description: "Индивидуальный подбор средств коррекции зрения" },
   { icon: TrendingDown, title: "Лечение близорукости", description: "Современные методы контроля и замедления прогрессирования миопии" },
   { icon: ShieldCheck, title: "Профилактические осмотры", description: "Регулярные проверки для раннего выявления проблем со зрением" },
+  { icon: Eye, title: "Офтальмология для взрослых", description: "Полная диагностика и лечение заболеваний глаз у взрослых: близорукость, дальнозоркость, астигматизм, синдром сухого глаза, возрастные изменения зрения." },
 ];
 
 const ServicesSection = () => (
@@ -395,6 +396,7 @@ const ContactsSection = () => (
             <a href="tel:+74951625876" className="text-sm text-primary hover:underline font-medium">
               +7 (495) 162-58-76
             </a>
+            <p className="text-xs text-muted-foreground mt-2">Колл-центр ежедневно<br />9:00 – 20:00</p>
           </CardContent>
         </Card>
       </div>
