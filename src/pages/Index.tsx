@@ -395,6 +395,7 @@ const ContactsSection = () => (
             <a href="tel:+74951625876" className="text-sm text-primary hover:underline font-medium">
               +7 (495) 162-58-76
             </a>
+            <p className="text-xs text-muted-foreground mt-2">Колл-центр ежедневно<br />9:00 – 20:00</p>
           </CardContent>
         </Card>
       </div>
