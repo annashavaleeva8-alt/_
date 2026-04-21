@@ -426,7 +426,8 @@ const Footer = () => (
   <footer className="py-10 px-4 border-t border-border">
     <div className="max-w-6xl mx-auto text-center">
       <p className="font-semibold text-foreground mb-2">Шавалеева Алина Рустемовна</p>
-      <p className="text-sm text-muted-foreground mb-4">Врач-офтальмолог · Москва · Приём пациентов с 0 лет</p>
+      <p className="text-sm text-muted-foreground mb-1">Врач-офтальмолог · Москва · Приём пациентов с 0 лет</p>
+      <p className="text-sm text-muted-foreground mb-4">Адрес: ул. Тепличная, 12</p>
       <p className="text-xs text-muted-foreground max-w-lg mx-auto leading-relaxed">
         Информация на сайте носит ознакомительный характер и не является публичной офертой. Не&nbsp;заменяет очную консультацию специалиста. Имеются противопоказания, необходима консультация врача.
       </p>
