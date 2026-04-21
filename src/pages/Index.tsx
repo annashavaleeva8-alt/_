@@ -416,6 +416,10 @@ const ContactsSection = () => (
             <MapPin className="w-4 h-4 shrink-0" />
             <span className="text-sm">Троицк, Академическая площадь, 1</span>
           </a>
+          <a href="https://yandex.ru/maps/?text=улица+Тепличная+12" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+            <MapPin className="w-4 h-4 shrink-0" />
+            <span className="text-sm">ул. Тепличная, 12</span>
+          </a>
         </div>
       </div>
     </div>
@@ -426,8 +430,7 @@ const Footer = () => (
   <footer className="py-10 px-4 border-t border-border">
     <div className="max-w-6xl mx-auto text-center">
       <p className="font-semibold text-foreground mb-2">Шавалеева Алина Рустемовна</p>
-      <p className="text-sm text-muted-foreground mb-1">Врач-офтальмолог · Москва · Приём пациентов с 0 лет</p>
-      <p className="text-sm text-muted-foreground mb-4">Адрес: ул. Тепличная, 12</p>
+      <p className="text-sm text-muted-foreground mb-4">Врач-офтальмолог · Москва · Приём пациентов с 0 лет</p>
       <p className="text-xs text-muted-foreground max-w-lg mx-auto leading-relaxed">
         Информация на сайте носит ознакомительный характер и не является публичной офертой. Не&nbsp;заменяет очную консультацию специалиста. Имеются противопоказания, необходима консультация врача.
       </p>
