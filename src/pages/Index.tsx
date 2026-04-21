@@ -412,9 +412,9 @@ const ContactsSection = () => (
             <MapPin className="w-4 h-4 shrink-0" />
             <span className="text-sm">Подольск, пр-т Ленина, 150/54</span>
           </a>
-          <a href="https://yandex.ru/maps/-/CHe8nRkD" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+          <a href="https://yandex.ru/maps/?text=Троицк+Октябрьский+проспект+13А" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 text-muted-foreground hover:text-primary transition-colors">
             <MapPin className="w-4 h-4 shrink-0" />
-            <span className="text-sm">Троицк, Академическая площадь, 1</span>
+            <span className="text-sm">Троицк, Октябрьский проспект, 13А</span>
           </a>
           <a href="https://yandex.ru/maps/?text=улица+Тепличная+12" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 text-muted-foreground hover:text-primary transition-colors">
             <MapPin className="w-4 h-4 shrink-0" />
