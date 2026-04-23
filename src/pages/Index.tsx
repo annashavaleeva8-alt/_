@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/accordion";
 import { useState, useEffect } from "react";
 import doctorPhoto from "@/assets/doctor-photo.png";
-import logoAlina from "@/assets/logo-alina.png";
+
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { supabase } from "@/integrations/supabase/client";
 
